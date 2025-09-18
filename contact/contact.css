@@ -1,0 +1,234 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: playfair display, georgia;
+	background-color: #eaeaea;
+}
+
+#bandeautitre{
+	background-image: url("../marbrenoir.jpg");
+	border-bottom: 2px solid #c2c2c2;
+	margin-bottom: 0;
+}
+
+.logo{
+	float: left;
+	margin: 0px 0px;
+	padding: 1% 0%;
+	position: relative;
+	left: 1%;
+	top: 2px;
+}
+
+.titre{
+	margin: 0;
+	padding-top: 1%;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 2px black; 
+	font-weight: bold;
+	font-size: 250%;
+}
+
+.soustitre{
+	font-size: 300%;
+	font-family: dancing script;
+	text-align: center;
+	color: #c2c2c2;
+	text-shadow: 0px 0px 9px black;
+	font-weight: lighter;
+	font-style: oblique;
+	font-size: 160%;
+	text-shadow: 0px 0px 1px grey;
+	position: relative; 
+	top: -5px; 
+	margin: 8px;
+}
+
+
+/*couv*/
+.couv{
+	width: 4%;
+	height: 12%;
+	position: absolute; 
+	opacity : 60%;
+	left: 94%;
+	top: 3%;
+	z-index: 50;
+	border: 2px solid white;
+}
+
+/*logos reseaux en haut à droite
+
+.logoyoutube{
+	background-image: url("frise.png");
+	background-position:  -110px 0px;
+	height: 39px;
+	width: 46px;
+	display: inline-block;
+	position: absolute;
+	left: 80.2%;
+	top: 9%;
+	z-index: 10;
+	opacity: 92%;
+}
+
+.logoinsta{
+	background-image: url("frise.png");
+	background-position: 1.6px 1px;
+	height: 38px;
+	width: 45px;
+	display: inline-block;
+	position: absolute;
+	left: 84.3%;
+	top: 9%;
+	z-index: 10;
+	opacity: 92%;
+}
+
+.logomail{
+	background-image: url("frise.png");
+	background-position: -50px 0px;
+	height: 39px;
+	width: 46px;
+	display: inline-block;
+	position: absolute;
+	left: 88.3%;
+	top: 9.2%;
+	z-index: 10;
+	opacity: 92%;
+}
+
+fin de la frise de logos reseaux*/
+
+/*debut du menu*/
+
+.menu{
+	margin-top: 0px;
+	margin-left: -35px;
+}
+
+.menu li{
+	list-style: none;
+	float: left;
+	/*width: 338px;*/
+	width: 24.8%;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-bottom: 2px solid  #d3d3d3;
+}
+
+.sousmenu li{
+	border-left: 0px solid #cdcdcd;
+	border-bottom: 0px solid #cdcdcd; /*sans ça les bordures se doublent*/
+	width: 100%;
+}
+
+.sousmenu a{
+	font-style: oblique;
+}
+
+.menu a{
+	color: #262D37;
+	text-decoration: none;
+}
+
+.menu a:not(.sousmenu a){
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.menu li, .sousmenu li{
+	background-image: url("../marbre.jpg");
+	text-indent: 6px; 
+	margin-right: -1px;
+}
+
+.menu .sousmenu{
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.menu li:hover .sousmenu{
+	display: block;
+}
+
+.menu a, .sousmenu a{
+	display: block; 
+}
+
+.sousmenu a{ /*necessaire pour faire en sorte que la surbrillance prenne bien toute la cellule*/
+	padding-top: 6px; 
+	padding-bottom: 6px;
+}
+
+.menu a:hover, .sousmenu a:hover{
+	background-color: #262D37;
+	color: #e7e7e7;
+	font-weight: bold;
+}
+
+/*fin du menu - fin de la mise en forme commune a toute les pages*/
+
+.titre1{
+	font-family : dancing script;
+	position: absolute;
+	left: 6%;
+	text-decoration: underline;
+	z-index: -1;
+	font-size: 170%;
+	top: 32%;
+}
+
+.paragraphe{
+	width: 50%; 
+	position: absolute;
+	left: 6%;
+	top: 16em;
+	text-align: justify;
+}
+
+.insta{
+	text-decoration: none; 
+	font-weight: bold; 
+	background: linear-gradient(to right, #FBBE54, #E22647, #A84393, #5757A1); /*pour mettre le texte aux couleurs d'insta - cf fiche - */
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent;
+}
+
+.portrait{
+	position: absolute;  
+	overflow: hidden;
+	width:25%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
+	box-shadow: 1px 1px 5px grey;
+	left: 64%;
+	top: 40%;
+	z-index: -1;
+}
+
+
+/*bandeau du bas*/
+
+.retour a{
+	text-decoration: underline;
+	color: #eeeeee;
+	font-weight: bold;
+}
+
+.retour{
+	position: absolute;
+	margin-top: 60%;
+	text-align: center;
+	clear: left right; 
+	background-image: url("../marbrenoir.jpg"); 
+	border-top: 2px solid black;
+	width: 100%;
+}
+
+@media screen and (max-width: 1280px) { /*suppression de la barre de bas quand la fenetre se réduit*/
+	.retour, .portrait{
+		display: none;
+	}
+	
+}

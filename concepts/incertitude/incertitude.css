@@ -1,0 +1,230 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: playfair display, georgia;
+	background-color: #eaeaea;
+}
+
+#bandeautitre{
+	background-image: url("../../marbrenoir.jpg");
+	border-bottom: 2px solid #c2c2c2;
+	margin-bottom: 0;
+}
+
+.logo{
+	float: left;
+	margin: 0px 0px;
+	padding: 1% 0%;
+	position: relative;
+	left: 1%;
+	top: 2px;
+}
+
+.titre{
+	margin: 0;
+	padding-top: 1%;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 2px black; 
+	font-weight: bold;
+	font-size: 250%;
+}
+
+.soustitre{
+	font-size: 300%;
+	font-family: dancing script;
+	text-align: center;
+	color: #c2c2c2;
+	text-shadow: 0px 0px 9px black;
+	font-weight: lighter;
+	font-style: oblique;
+	font-size: 160%;
+	text-shadow: 0px 0px 1px grey;
+	position: relative; 
+	top: -5px; 
+	margin: 8px;
+}
+
+/*couv*/
+.couv{
+	width: 4%;
+	height: 12%;
+	position: absolute; 
+	opacity : 60%;
+	left: 94%;
+	top: 3%;
+	z-index: 50;
+	border: 2px solid white;
+}
+
+/*fin de la frise de logos reseaux*/
+
+/*debut du menu*/
+
+.menu{
+	margin-top: 0px;
+	margin-left: -35px;
+}
+
+.menu li{
+	list-style: none;
+	float: left;
+	/*width: 338px;*/
+	width: 24.8%;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-bottom: 2px solid  #d3d3d3;
+}
+
+.sousmenu li{
+	border-left: 0px solid #cdcdcd;
+	border-bottom: 0px solid #cdcdcd; /*sans ça les bordures se doublent*/
+	width: 100%;
+}
+
+.sousmenu a{
+	font-style: oblique;
+}
+
+.menu a{
+	color: #262D37;
+	text-decoration: none;
+}
+
+.menu a:not(.sousmenu a){
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.menu li, .sousmenu li{
+	background-image: url("../../marbre.jpg");
+	text-indent: 6px; 
+	margin-right: -1px;
+}
+
+.menu .sousmenu{
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.menu li:hover .sousmenu{
+	display: block;
+}
+
+.menu a, .sousmenu a{
+	display: block; 
+}
+
+.sousmenu a{ /*necessaire pour faire en sorte que la surbrillance prenne bien toute la cellule*/
+	padding-top: 6px; 
+	padding-bottom: 6px;
+}
+
+.menu a:hover, .sousmenu a:hover{
+	background-color: #262D37;
+	color: #e7e7e7;
+	font-weight: bold;
+}
+	
+/*fin du menu - fin de la mise en forme commune a toute les pages*/
+
+.titre1{
+	font-family : dancing script;
+	position: absolute;
+	left: 45%;
+	text-decoration: underline;
+	z-index: -1;
+	font-size: 170%;
+	top: 25%;
+}
+
+.paragraphe{
+	margin-left: 10%;
+	margin-right: 10%; 
+	position: absolute;
+	top: 35%;
+	text-align: justify;
+	z-index: -1;
+}
+
+.titre2{
+	font-family : dancing script;
+	position: absolute;
+	left: 40%;
+	text-decoration: underline;
+	z-index: -1;
+	font-size: 140%;
+	top: 85%;
+	font-weight: bold;
+}
+
+.video{
+	padding: 5px; 
+	background-color: white; 
+	border: 1px solid grey;
+	box-shadow: 2px 2px 2px grey;
+	position: absolute;
+	top: 96%;
+	width: 40%; /*width base 50% height 60%*/
+	height: 50%;
+	left: 9%; /*pour remettre au milieu - 26% -*/
+	clear: left right;
+	z-index: 1000;
+}
+
+.video2{
+	padding: 5px; 
+	background-color: white; 
+	border: 1px solid grey;
+	box-shadow: 2px 2px 2px grey;
+	position: absolute;
+	top: 96%;
+	width: 40%;
+	height: 50%;
+	left: 51%; 
+	clear: left right;
+	z-index: 1000;
+}
+
+.paragraphe2{
+	margin-left: 10%;
+	margin-right: 10%; 
+	position: absolute;
+	top: 150%;
+	text-align: justify;
+	z-index: -1;
+}
+
+.logo2{
+	width: 8%; 
+	left: 46%; 
+	top: 210%; 
+	z-index: -1;
+	filter: opacity(0.2);
+	position: absolute; 
+}
+
+/*bandeau du bas*/
+
+.retour a{
+	text-decoration: underline;
+	color: #eeeeee;
+	font-weight: bold;
+	margin-top: -3px;
+}
+
+.retour{
+	text-align: center;
+	position: absolute;  /*la position devra être corrigée dans les autres pages*/
+	top: 240%; 
+	background-image: url("../../marbrenoir.jpg"); 
+	border-top: 2px solid black;
+	width: 100%;
+}
+
+@media screen and (max-width: 1280px) { /*suppression de la barre de bas quand la fenetre se réduit*/
+	.retour, .video, .video2{
+		display: none;
+	}
+}
