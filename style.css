@@ -148,6 +148,7 @@ body {
 	position: relative;
     max-width: 1240px;
 	width: 50%;
+	padding: 0px;
 }
 
 .imagegauche, .imagedroite {
@@ -236,3 +237,4 @@ body {
         font-size: 0.9rem;
     }
 }
+
