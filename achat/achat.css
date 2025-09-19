@@ -174,9 +174,9 @@ body {
 
 .tableau{
 	margin-left: 55%;
+	margin-top: 2%;
 	width: 25%;
 	position: absolute; 
-	top: 165%;
 	clear: left right;
 	filter: opacity(0.3);
 }
