@@ -24,6 +24,7 @@ body {
         object-fit: cover; /* pour remplir l’écran proprement */
         z-index: 3000;       /* dessus le contenu */
       }
+	}
 
 /*fin du bloc portable*/
 
@@ -256,4 +257,5 @@ body {
         font-size: 0.9rem;
     }
 }
+
 
