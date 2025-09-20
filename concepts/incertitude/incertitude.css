@@ -1,132 +1,120 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: playfair display, georgia;
-	background-color: #eaeaea;
+/* --- RESET / BASE --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    background-color: #eaeaea;
 }
 
-#bandeautitre{
-	background-image: url("../../marbrenoir.jpg");
-	border-bottom: 2px solid #c2c2c2;
-	margin-bottom: 0;
+#bandeautitre {
+    background-image: url("marbrenoir.jpg");
+    border-bottom: 2px solid #c2c2c2;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 6px 0;
 }
 
-.logo{
-	float: left;
-	margin: 0px 0px;
-	padding: 1% 0%;
-	position: relative;
-	left: 1%;
-	top: 2px;
+.logo {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.titre{
-	margin: 0;
-	padding-top: 1%;
-	text-align: center;
-	color: white;
-	text-shadow: 0px 0px 2px black; 
-	font-weight: bold;
-	font-size: 250%;
+.titre {
+    margin: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 0 0 2px black;
 }
 
-.soustitre{
-	font-size: 300%;
-	font-family: dancing script;
-	text-align: center;
-	color: #c2c2c2;
-	text-shadow: 0px 0px 9px black;
-	font-weight: lighter;
-	font-style: oblique;
-	font-size: 160%;
-	text-shadow: 0px 0px 1px grey;
-	position: relative; 
-	top: -5px; 
-	margin: 8px;
+.soustitre {
+    font-family: 'Dancing Script', cursive;
+    color: #c2c2c2;
+    font-weight: lighter;
+    font-style: oblique;
+    font-size: 1.6rem;
+    text-shadow: 0 0 1px grey;
+    margin-top: 10px;
+	margin-bottom: 5px; 
 }
 
-/*couv*/
-.couv{
-	width: 4%;
-	height: 12%;
-	position: absolute; 
-	opacity : 60%;
-	left: 94%;
-	top: 3%;
-	z-index: 50;
-	border: 2px solid white;
+/* --- Couv --- */
+.couv {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 55px;
+	height: auto; 
+    border: 2px solid white;
+    opacity: 0.6;
 }
 
-/*fin de la frise de logos reseaux*/
-
-/*debut du menu*/
-
-.menu{
-	margin-top: 0px;
-	margin-left: -35px;
+/* --- MENU --- */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.menu li{
-	list-style: none;
-	float: left;
-	/*width: 338px;*/
-	width: 24.8%;
-	text-align: center;
-	border: 1px solid #cdcdcd;
-	border-bottom: 2px solid  #d3d3d3;
+.menu li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-bottom: 2px solid #d3d3d3;
+    background-image: url("marbre.jpg");
 }
 
-.sousmenu li{
-	border-left: 0px solid #cdcdcd;
-	border-bottom: 0px solid #cdcdcd; /*sans ça les bordures se doublent*/
-	width: 100%;
+.menu a {
+    display: block;
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #262D37;
+    text-decoration: none;
 }
 
-.sousmenu a{
-	font-style: oblique;
+.sousmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-image: url("marbre.jpg");
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
 }
 
-.menu a{
-	color: #262D37;
-	text-decoration: none;
+.sousmenu li {
+    border-bottom: 1px solid #DBDBDB;
 }
 
-.menu a:not(.sousmenu a){
-	font-weight: bold;
-	font-size: 120%;
+.menu li:hover .sousmenu {
+    display: block;
 }
 
-.menu li, .sousmenu li{
-	background-image: url("../../marbre.jpg");
-	text-indent: 6px; 
-	margin-right: -1px;
+.sousmenu a {
+    padding: 3px 0;
+    font-style: oblique;
+	font-weight: normal;
 }
 
-.menu .sousmenu{
-	padding: 0;
-	margin: 0;
-	display: none;
+.menu a:hover, .sousmenu a:hover {
+    background-color: #262D37;
+    color: #e7e7e7;
+    font-weight: bold;
 }
 
-.menu li:hover .sousmenu{
-	display: block;
-}
+/*--Fin de la partie commune--*/
 
-.menu a, .sousmenu a{
-	display: block; 
-}
-
-.sousmenu a{ /*necessaire pour faire en sorte que la surbrillance prenne bien toute la cellule*/
-	padding-top: 6px; 
-	padding-bottom: 6px;
-}
-
-.menu a:hover, .sousmenu a:hover{
-	background-color: #262D37;
-	color: #e7e7e7;
-	font-weight: bold;
-}
-	
 /*fin du menu - fin de la mise en forme commune a toute les pages*/
 
 .titre1{
@@ -227,4 +215,5 @@ body{
 	.retour, .video, .video2{
 		display: none;
 	}
+
 }
