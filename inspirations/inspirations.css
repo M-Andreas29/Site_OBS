@@ -7,7 +7,7 @@ body {
 }
 
 #bandeautitre {
-    background-image: url("marbrenoir.jpg");
+    background-image: url("../marbrenoir.jpg");
     border-bottom: 2px solid #c2c2c2;
     width: 100%;
     position: relative;
@@ -68,7 +68,7 @@ body {
     text-align: center;
     border: 1px solid #cdcdcd;
     border-bottom: 2px solid #d3d3d3;
-    background-image: url("marbre.jpg");
+    background-image: url("../marbre.jpg");
 }
 
 .menu a {
@@ -86,7 +86,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    background-image: url("marbre.jpg");
+    background-image: url("../marbre.jpg");
     list-style: none;
     margin: 0;
     padding: 0;
@@ -182,3 +182,4 @@ body {
 	
 
 }
+
