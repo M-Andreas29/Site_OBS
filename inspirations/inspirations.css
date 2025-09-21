@@ -172,13 +172,14 @@ body {
 	width: 100%;
 }
 
-@media screen and (max-width: 1280px) { /*suppression de la barre de bas quand la fenetre se réduit*/
+@media screen and (max-width: 769px) { /*suppression de la barre de bas quand la fenetre se réduit*/
 	.retour, .portrait{
 		display: none;
 	}
 	
 
 }
+
 
 
 
