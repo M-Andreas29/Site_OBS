@@ -138,17 +138,20 @@ body {
 	z-index: -1;
 }
 
-.paragraphe2{
-	width: 50%; 
-	position: relative;
-	left:39%;
-	margin-top: 40%;
-	text-align: justify;
-}
+
 
 .lientexte{
 	color: black;
 	font-weight: bold;
+}
+
+
+.paragraphe2{
+	width: 50%; 
+	position: relative;
+	left:39%;
+	margin-top: 37%;
+	text-align: justify;
 }
 
 .portrait{
@@ -173,7 +176,7 @@ body {
 	height: 55%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
 	box-shadow: 1px 1px 5px grey;
 	left:10%;
-	top: 108%;
+	top: 104%;
 	z-index: -1;
 }
 
@@ -204,5 +207,6 @@ body {
 	
 
 }
+
 
 
