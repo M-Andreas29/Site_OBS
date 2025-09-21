@@ -167,7 +167,7 @@ body {
 .portrait{  
 	border: 1px solid grey;
 	box-shadow: 1px 1px 5px grey;
-	width: 45%;
+	width: 55%;
 	max-width: 400px;
 	position: absolute; 
 	left: 65%;
@@ -272,4 +272,5 @@ body {
 	}
 	
 }
+
 
