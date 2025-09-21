@@ -118,6 +118,7 @@ body {
 /*fin du menu - fin de la mise en forme commune a toute les pages*/
 
 
+
 .titre1{
 	font-family : dancing script;
 	position: absolute;
@@ -133,18 +134,10 @@ body {
 	width: 50%; 
 	position: absolute;
 	left: 6%;
-	top: 39%;
+	top: 38%;
 	text-align: justify;
 	z-index: -1;
 }
-
-
-
-.lientexte{
-	color: black;
-	font-weight: bold;
-}
-
 
 .paragraphe2{
 	width: 50%; 
@@ -154,13 +147,18 @@ body {
 	text-align: justify;
 }
 
+.lientexte{
+	color: black;
+	font-weight: bold;
+}
+
 .portrait{
 	padding: 2px; 
 	border: 1px solid grey; 
 	background-color: white;
 	position: absolute;  
 	overflow: hidden;
-	width:25%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
+	width:35%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
 	box-shadow: 1px 1px 5px grey;
 	left:60%;
 	top: 40%;
@@ -173,11 +171,31 @@ body {
 	background-color: white;
 	position: absolute;  
 	overflow: hidden;
-	height: 55%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
+	height: 58%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
 	box-shadow: 1px 1px 5px grey;
-	left:10%;
-	top: 104%;
+	left: 8%;
+	top: 100%; 
 	z-index: -1;
+}
+
+/*bandeau du bas*/
+
+.retour a{
+	text-decoration: underline;
+	color: #eeeeee;
+	font-weight: bold;
+}
+
+.retour{
+	margin-top: 80%;
+	position: relative;
+	margin-top: 10%;
+	text-align: center;
+	clear: left right; 
+	background-image: url("../../marbrenoir.jpg"); 
+	border-top: 2px solid black;
+	width: 100%;
+	margin-bottom: 0px;
 }
 
 /*bandeau du bas*/
@@ -207,6 +225,7 @@ body {
 	
 
 }
+
 
 
 
