@@ -1,261 +1,92 @@
-/* --- partie commune --- */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', Georgia, serif;
-    background-color: #eaeaea;
-}
-
-#bandeautitre {
-    background-image: url("../marbrenoir.jpg");
-    border-bottom: 2px solid #c2c2c2;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    padding: 6px 0;
-}
-
-.logo {
-    position: absolute;
-    left: 1%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.titre {
-    margin: 1px;
-    color: white;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-shadow: 0 0 2px black;
-}
-
-.soustitre {
-    font-family: 'Dancing Script', cursive;
-    color: #c2c2c2;
-    font-weight: lighter;
-    font-style: oblique;
-    font-size: 1.6rem;
-    text-shadow: 0 0 1px grey;
-    margin-top: 10px;
-	margin-bottom: 5px; 
-}
-
-/* --- Couv en haut a droite--- */
-.couv {
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translateY(-50%);
-    width: 55px;
-	height: auto; 
-    border: 2px solid white;
-    opacity: 0.6;
-}
-
-/* --- MENU --- */
-.menu {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.menu li {
-    position: relative;
-    flex: 1;
-    text-align: center;
-    border: 1px solid #cdcdcd;
-    border-bottom: 2px solid #d3d3d3;
-    background-image: url("../marbre.jpg");
-}
-
-.menu a {
-    display: block;
-    padding: 3px 0;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #262D37;
-    text-decoration: none;
-}
-
-.sousmenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-image: url("../marbre.jpg");
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-}
-
-.sousmenu li {
-    border-bottom: 1px solid #DBDBDB;
-	z-index: 10;
-}
-
-.menu li:hover .sousmenu {
-    display: block;
-}
-
-.sousmenu a {
-    padding: 3px 0;
-    font-style: oblique;
-	font-weight: normal;
-}
-
-.menu a:hover, .sousmenu a:hover {
-    background-color: #262D37;
-    color: #e7e7e7;
-    font-weight: bold;
-}
-
-/*--Fin de la partie commune--*/
-
-
-/* --- TITRE ET PARAGRAPHE --- */
-.titre1 {
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    font-size: 1.7rem;
-    text-decoration: underline;
-    margin-top: 60px;
-	margin-bottom: -45px;
-	z-index:-1;
-}
-
-.paragraphe {
-    max-width: 80%;
-	margin-left: 10%;
-	margin-right: 40%; 
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 1.6;
-	z-index:-2;
-}
-
-
-/* --- ELEMENTS IMPORTANTS --- */
-
-.portrait{  
-	border: 1px solid black;
-	box-shadow: 3px 3px 3px grey;
-	width: 30%;
-	max-width: 300px;
-	position: absolute; 
-	top: 42%;
-	left: 70%;
-	clear: left right;
-	opacity: 0.95;
-}
-
-.insta{
-	text-decoration: none; 
-	font-weight: bold; 
-	background: linear-gradient(to right, #FBBE54, #E22647, #A84393, #5757A1); /*pour mettre le texte aux couleurs d'insta - cf fiche - */
-	-webkit-background-clip: text; 
-	-webkit-text-fill-color: transparent;
-}
-
-/* --- BANDEAU DU BAS --- */
-.retour {
-    position: relative;
-	margin-top: 5%;
-	margin-bottom: 0px;
-    width: 100%; 
-	height: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url("../marbrenoir.jpg");
-    border-top: 2px solid black;
-    text-align: center;
-    padding: 2px 0;
-    z-index: 200;
-}
-
-.retour a {
-    color: #eeeeee;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 768px) { /*suppression des gros elements quand la fenetre se réduit*/
-	.portrait{
-		display: none;
-	}
-
-@media screen and (max-width: 768px) {
-    #bandeautitre {
-        padding: 10px 0;
-    }
-    .titre {
-        font-size: 2rem;
-    }
-    .soustitre {
-        font-size: 1.2rem;
-    }
-    .menu li {
-        flex: 100%;
-    }
-    .video-container {
-        width: 100%;
-    }
-    .imagegauche, .imagedroite {
-        display: none;
-    }
-   .retour {
-        width: 90%;
-        font-size: 0.9rem;
-		margin-top:150%;
-    }
-}
-
-/*logos reseaux en haut à droite (archive)
-
-.logoyoutube{
-	background-image: url("frise.png");
-	background-position:  -110px 0px;
-	height: 39px;
-	width: 46px;
-	display: inline-block;
-	position: absolute;
-	left: 80.2%;
-	top: 9%;
-	z-index: 10;
-	opacity: 92%;
-}
-
-.logoinsta{
-	background-image: url("frise.png");
-	background-position: 1.6px 1px;
-	height: 38px;
-	width: 45px;
-	display: inline-block;
-	position: absolute;
-	left: 84.3%;
-	top: 9%;
-	z-index: 10;
-	opacity: 92%;
-}
-
-.logomail{
-	background-image: url("frise.png");
-	background-position: -50px 0px;
-	height: 39px;
-	width: 46px;
-	display: inline-block;
-	position: absolute;
-	left: 88.3%;
-	top: 9.2%;
-	z-index: 10;
-	opacity: 92%;
-}
-
-fin de la frise de logos reseaux*/
-
-
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>L'obsession de Jupiter | Contact</title>
+		<link rel="shortcut icon" href="../logo.png">
+		<link rel="stylesheet" href="contact.css">
+		
+		<meta name="L'obsession de Jupiter" content="Pourquoi l'histoire des hommes suit une logique matérielle ? Pourquoi les sédentaires ont été plus malheureux que les nomades ? L'obsession de Jupiter est un ouvrage qui replace l'histoire humaine dans l'histoire de l'univers.">
+		
+		<!--debut de polices google font. Nom = dancing script -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+		<!--google font playfair display -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		<!--fin de polices google font-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+			<div id="bandeautitre">
+				<span class="logo"><a href="../index.html"><img src="../logo.png" alt="logo" width="80px"></a></span>
+				<h1 class="titre">L'obsession de Jupiter</h1>
+				<h2 class="soustitre">A propos de moi & Contact</h2>
+				
+				<!--couv en haut à droite-->
+			<a href="https://www.amazon.fr/Lobsession-Jupiter-Matthieu-Solange/dp/B0FJ71RQNG?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91" target="_blank"><img class="couv" src="../couverture.png" alt="couverture"></a>
+			
+			
+			</div>	
+			
+			<!-- frise logos reseaux
+				<a href="mailto:matthieu.solange@hotmail.com" class="logomail"> </a>
+				<a href="https://www.instagram.com/matthieu.solange/" class="logoinsta" target="_blank"> </a>
+				<a href="https://www.youtube.com/@matthieusolange" class="logoyoutube" target="_blank"> </a>
+			<!--fin de la frise-->
+			
+			
+			<ul class="menu">
+				<li><a href="../index.html">Page d'accueil</a>
+					<ul class="sousmenu">
+						<li><a href="../achat/achat.html">Achat</a></li>
+					</ul>
+				</li>
+				<li><a href="../concepts/concepts.html">Concepts</a>
+					<ul class="sousmenu">
+						<li><a href="../concepts/incertitude/incertitude.html">Principe d'incertitude</a></li>
+						<li><a href="../concepts/structure/structure.html">Structures dissipatives</a></li>
+						<li><a href="../concepts/organisation/organisation.html">Auto-organisation</a></li>
+						<li><a href="../concepts/destruction/destruction.html">Autodestruction</a></li>
+					</ul>
+				</li>
+				<li><a href="../inspirations/inspirations.html">Sources d'inspiration</a>
+					<ul class="sousmenu">
+						<li><a href="../inspirations/spinoza/spinoza.html">Spinoza visionnaire</a></li>
+						<li><a href="../inspirations/dawkins/dawkins.html">Du désir mimétique à la mémétique</a></li>
+						<!--<li><a href="../inspirations/dawkins/dawkins.html">Kaczynski</a></li>-->
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<!--fin de la partie commune-->
+			<div class="body2">
+				<p class="titre1">A propos de moi</p>
+				<br><br>
+				<p class="paragraphe"><br>Je n'ai pas pour volonté de devenir connu, ni même identifiable. 
+					<br>
+					<br>Cela me plait de rester anonyme, et de pousser les gens à se concentrer sur ma pensée. Je veux que mon oeuvre soit lue pour elle-même, analysée en elle-même, et non considérée à la lumière de l'opinion qu'on peut avoir de moi. Je prefère qu'on juge mon travail à l'aune de sa qualité intrinsèque, et non en la rapportant à qui je suis. 
+					<br><br>De ce fait, je vous encourage à ne pas chercher à en savoir plus sur moi, et à vous concentrer uniquement sur les informations présentes dans mes écrits. 
+					<br><br>Je veux écrire comme si j'étais seul, avec personne pour me lire, car c'est seulement ainsi, lorsqu'on ne se soucie plus de ce que le monde va penser de nous, qu'on écrit vraiment des choses qui méritent d'être lues. 
+					<br><br>Cependant, si vous souhaitez m'écrire pour me faire part d'une pensée que vous avez eue en me lisant, vous pouvez utiliser les canaux référencés ci-dessous.
+					<br><br><br><span style="text-decoration: underline; font-size: 170%; font-family : dancing script;">Contact</span>
+					<br><br>
+					• Email : <a style="color: #4B4B82; font-weight: bold; text-decoration: none;" href="mailto:matthieu.solange@hotmail.com">| matthieu.solange@hotmail.com |</a>
+					<br><br>
+					• Instagram : <a class="insta" target=_blank href="https://www.instagram.com/matthieu.solange/">| Matthieu Solange |</a>
+					<br><br>
+					• Youtube : <a style="color: #FF0000; font-weight: bold; text-decoration: none;" href="https://www.youtube.com/@matthieusolange" target=_blank >▸ Matthieu Solange ◂</a>
+				</p>
+				<img class="portrait" src="portrait2.png" alt="Moi">
+			
+			<p class="retour"><a href="#bandeautitre">Retour en haut</a></p>
+			
+			</div>
+			<!--debut du bandeau du bas-->
+			
+	</body>
+</html>
