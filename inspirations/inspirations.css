@@ -118,42 +118,38 @@ body {
 
 .titre1{
 	font-family : dancing script;
-	position: absolute;
-	left: 6%;
+	position: relative;
+	left: 25%;
 	text-decoration: underline;
 	z-index: -1;
 	font-size: 170%;
-	top: 32%;
+	margin-top: 8%;
+	margin-bottom: 0px;
 }
 
 .paragraphe{
 	width: 50%; 
-	position: absolute;
+	position: relative;
 	left: 6%;
-	top: 16em;
+	margin-top: 5px;
+	margin-bottom: -10px;
 	text-align: justify;
 }
 
-.insta{
-	text-decoration: none; 
-	font-weight: bold; 
-	background: linear-gradient(to right, #FBBE54, #E22647, #A84393, #5757A1); /*pour mettre le texte aux couleurs d'insta - cf fiche - */
-	-webkit-background-clip: text; 
-	-webkit-text-fill-color: transparent;
-}
-
 .portrait{
-	position: absolute;  
+	position: relative;  
 	overflow: hidden;
-	width:35%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
+	width: 35%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
 	box-shadow: 2px 2px 5px grey;
 	left: 60%;
-	top: 54%;
+	clear: left right;
 	z-index: -1;
 	opacity: 0.9;
 	background-color: black; 
 	padding: 2px; 
 	border: 1px solid black;
+	margin-bottom: 5%; 
+	margin-top: -50%;
 }
 
 
@@ -166,8 +162,9 @@ body {
 }
 
 .retour{
-	position: absolute;
-	margin-top: 60%;
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 0px;
 	text-align: center;
 	clear: left right; 
 	background-image: url("../marbrenoir.jpg"); 
@@ -182,4 +179,5 @@ body {
 	
 
 }
+
 
