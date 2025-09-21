@@ -223,36 +223,45 @@ body {
 }
 
 .tableau{ 
-	width: 25%;
+	width: 17%;
 	position: absolute; 
-	top: 361%;
-	left: 58%;
+	margin-top: 150%;
+	left: 64%;
 	clear: left right;
 	filter: opacity(0.3);
 }
 
 .extrait{
-	position: absolute; 
+	position: relative; 
 	left: 10%; 
 	padding: 2px; 
 	border: 1px solid black;
 	background-color: white; 
 	box-shadow: 3px 3px 3px grey;
-	top: 355%;
+	margin-top: 146%;
 }
 
 
 /*bandeau du bas*/
 
-.bouton{
-	padding: 1px;
-	border: 1px solid black;
-	background-color: white; 
-	box-shadow: 1px 1px 1px grey; 
-	position : absolute; 
-	top: 120%; 
-	width: 7%;
+.retour a{
+	text-decoration: underline;
+	color: #eeeeee;
+	font-weight: bold;
 }
+
+.retour{
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 0;
+	text-align: center;
+	clear: left right; 
+	background-image: url("../../marbrenoir.jpg"); 
+	border-top: 2px solid black;
+	width: 100%;
+}
+
+/*bandeau du bas*/
 
 .retour a{
 	text-decoration: underline;
@@ -272,11 +281,12 @@ body {
 }
 
 
-@media screen and (max-width: 1280px) { /*suppression de la barre de bas quand la fenetre se réduit*/
+@media screen and (max-width: 960px) { /*suppression de la barre de bas quand la fenetre se réduit*/
 	.retour, .portrait1, .portrait2, .video, .imagegauche, .imagedroite, .extrait{
 		display: none;
 	}
 	
 
 }
+
 
