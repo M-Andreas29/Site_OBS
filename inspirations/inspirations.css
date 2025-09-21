@@ -139,7 +139,7 @@ body {
 .portrait{
 	position: relative;  
 	overflow: hidden;
-	width: 35%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
+	width: 30%; /*mettre la largeur d'une image en % permet de la réduire quand on réduit la fenetre*/
 	box-shadow: 2px 2px 5px grey;
 	left: 60%;
 	clear: left right;
@@ -149,7 +149,7 @@ body {
 	padding: 2px; 
 	border: 1px solid black;
 	margin-bottom: 5%; 
-	margin-top: -50%;
+	margin-top: -40%;
 }
 
 
@@ -179,5 +179,6 @@ body {
 	
 
 }
+
 
 
