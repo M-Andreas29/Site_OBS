@@ -1,9 +1,5 @@
 /* --- partie commune --- */
 
-<!--bloc tel portable, à supprimer quand le site mobile sera prêt-->
-		<img src="portable.png" class="portable" alt="bloc">
-		<!--fin du bloc-->
-
 body {
     margin: 0;
     padding: 0;
@@ -276,6 +272,7 @@ body {
 	}
 	
 }
+
 
 
 
