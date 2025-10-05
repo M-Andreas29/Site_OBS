@@ -1,3 +1,25 @@
+/* bloc pour portable - à enlever quand le site mobile sera prêt - faire les autres pages sur mobile */
+
+.portable{
+      display: none;
+    }
+
+ /* S'affiche sur écrans ≤ 960px */
+    @media (max-width: 960px) {
+      .portable{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover; /* pour remplir l’écran proprement */
+        z-index: 3000;       /* dessus le contenu */
+      }
+	}
+
+/*fin du bloc portable*/
+
 /* --- partie commune --- */
 
 body {
@@ -257,5 +279,6 @@ body {
 }
 
 fin de la frise de logos reseaux*/
+
 
 
